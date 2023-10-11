@@ -7,20 +7,32 @@
     <title>Odin Sign Up Form</title>
 </head>
 <body>
-    <div id="labelPanel">
-        
+    <div id="mainBody">
+        <div id="labelPanel">
+            
+        </div>
+        <div id="formPanel">
+            <form action="results.html" method="get">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                <div>
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password">
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>    
+                <button>Submit</button>
+            </form>
+        </div>
     </div>
-    <div id="formPanel">
-        <form action="results.html" method="get">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="text" name="password" id="password">
-            </div>
-        </form>
+    <div>Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/Z7KnwfMwXrc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </div>
 </body>
 </html>
