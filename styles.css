@@ -1,0 +1,18 @@
+body {
+    background-color: aqua;
+}
+
+#mainBody {
+    display: grid;
+}
+
+#labelPanel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#formPanel {
+    background-color: whitesmoke;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
