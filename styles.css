@@ -1,8 +1,8 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 input, textarea, button, select {
     font: inherit;
 }
@@ -17,22 +17,22 @@ body {
 }
 
 #labelPanel {
-    color: antiquewhite;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
 }
 
 #formPanel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 10%;
-    color: rgb(54, 42, 3);
+    color: darkslategrey;
     background-color: whitesmoke;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
 }
 
-#credit {
-    color: whitesmoke;
+#formGrid {
+    display: grid;
 }
