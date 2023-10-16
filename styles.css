@@ -18,6 +18,8 @@ body {
 
 #labelPanel {
     color: whitesmoke;
+    grid-column-start: 1;
+    grid-column-end: 2;
     display: flex;
     flex-direction: column;
 }
@@ -29,8 +31,12 @@ body {
 #formPanel {
     color: darkslategrey;
     background-color: whitesmoke;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #formGrid {
