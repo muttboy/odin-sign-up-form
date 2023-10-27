@@ -13,48 +13,46 @@
                 <img id="odin-logo" src="/images/odin-lined.png" alt="odin logo">
                 <h1>Gonta Zone</h1>
             </div>
-            <div class="left-panel-links" id="right-panel-github">
+            <div id="left-panel-links">
                 <div id="left-panel-credit">Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/Z7KnwfMwXrc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
-                <div id="left-panel-github"><a href="https://github.com/muttboy">muttboy</a></div> 
+                <div id="left-panel-github">Github @ <a href="https://github.com/muttboy">muttboy</a></div> 
             </div>
         </div>
         <div id="right-panel">
-            <div class="right-panel-section" id="right-panel-statement">
-                <h1 id="statement-title">This a fake title!</h1>
-                <p id="statement-paragraph">This is just a placeholder for some inspiring paragraph.</p>
-            </div>
             <div class="right-panel-section" id="right-panel-form">
-                <h1 id="right-panel-section-title">Registration</h1>
+                <h1 id="right-panel-section-title">Sign Up Today!</h1>
                 <form action="results.html" method="GET" id="form">
                     <div class="row">
                         <div class="input">
                             <label for="first">First:</label>
-                            <input type="text" name="first" id="first" placeholder="First" required>
+                            <input type="text" name="first" id="first" required>
                         </div>
                         <div class="input">
                             <label for="last">Last:</label>
-                            <input type="text" name="last" id="last" placeholder="Last" required>
+                            <input type="text" name="last" id="last" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input">
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" placeholder="Email" required>
-                        </div class="input">
+                            <input type="email" name="email" id="email" required>
+                        </div>    
+                        <div class="input" id="phone">
                             <label for="phone">Phone:</label>
-                            <input type="tel" name="phone" id="phone" placeholder="#">
-                    </div>
+                            <input type="tel" name="phone" id="phone" minlength="10" maxlength="10" pattern="">
+                        </div>
+                    </div>    
                     <div class="row">
                         <div class="input">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Password" required>
+                            <input type="password" name="password" id="password" minlength="8" required>
                         </div>
                         <div class="input">
                             <label for="password">Confirm Password</label>
-                            <input type="password" name="password" id="password" placeholder="Password" required>
+                            <input type="password" name="password" id="password" minlength="8" required>
                         </div> 
                     </div>
-                    <button>Submit</button>
+                    <input type="submit" value="Create Account">
                 </form>
             </div>
         </div>
