@@ -12,33 +12,28 @@ body {
     background-size: cover;
 }
 
-#mainBody {
+#main-body {
     display: grid;
 }
 
-#labelPanel {
-    color: whitesmoke;
+#left-panel {
+    color: floralwhite;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#logo {
-    display: flex;
-}
-
-#formPanel {
+#right-panel {
     color: darkslategrey;
     background-color: whitesmoke;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#formGrid {
-    display: grid;
+    align-items: center;
 }
