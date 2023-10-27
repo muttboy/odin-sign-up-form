@@ -33,16 +33,24 @@ body {
     justify-content: space-between;
 }
 
-#left-panel-logo {
+#left-panel-logo, #left-panel-links {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 3rem;
-    font-family: 'Odin';
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#left-panel-logo {
+    font-size: 3rem;
+    font-family: 'Odin';
     margin-top: 15%;
     margin-bottom: 15%;
+}
+
+#left-panel-links {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #odin-logo {
@@ -64,5 +72,16 @@ body {
 
 #form {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+}
+
+.row, input{
+    display: flex;
+    padding: 2%;
+    gap: 10%;
+}
+
+input {
+    gap: 2%;
 }
