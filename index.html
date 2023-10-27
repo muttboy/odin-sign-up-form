@@ -9,43 +9,53 @@
 <body>
     <div id="main-body">
         <div id="left-panel">
-            <div id="logo">
+            <div id="left-panel-logo">
+                <img id="odin-logo" src="/images/odin-lined.png" alt="odin logo">
                 <h1>Gonta Zone</h1>
             </div>
-            <div id="credit">Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/Z7KnwfMwXrc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            <div class="left-panel-links" id="right-panel-github">
+                <div id="left-panel-credit">Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/Z7KnwfMwXrc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+                <div id="left-panel-github"><a href="https://github.com/muttboy">muttboy</a></div> 
             </div>
         </div>
         <div id="right-panel">
             <div class="right-panel-section" id="right-panel-statement">
-                <h1 id="statement-title">Registration</h1>
+                <h1 id="statement-title">This a fake title!</h1>
                 <p id="statement-paragraph">This is just a placeholder for some inspiring paragraph.</p>
             </div>
             <div class="right-panel-section" id="right-panel-form">
-                <form action="results.html" method="GET">
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
+                <h1 id="right-panel-section-title">Registration</h1>
+                <form action="results.html" method="GET" id="form">
+                    <div class="row">
+                        <div class="input">
+                            <label for="first">First:</label>
+                            <input type="text" name="first" id="first" placeholder="First" required>
+                        </div>
+                        <div class="input">
+                            <label for="last">Last:</label>
+                            <input type="text" name="last" id="last" placeholder="Last" required>
+                        </div>
                     </div>
-                    <div>
-                        <label for="date">Birthday:</label>
-                        <input type="date" name="date" id="date">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <div>
+                    <div class="row">
+                        <div class="input">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div class="input">
                             <label for="phone">Phone:</label>
                             <input type="tel" name="phone" id="phone" placeholder="#">
-                        <div>
+                    </div>
+                    <div class="row">
+                        <div class="input">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Password">
+                            <input type="password" name="password" id="password" placeholder="Password" required>
                         </div>
-                    </div>    
+                        <div class="input">
+                            <label for="password">Confirm Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </div> 
+                    </div>
                     <button>Submit</button>
                 </form>
-            </div>
-            <div class="right-panel-section" id="right-panel-github">
-                <div id="github-link"><a href="https://github.com/muttboy">muttboy</a></div> 
             </div>
         </div>
     </div>
